@@ -3,10 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARÊTE CORE — Modern Computing Infrastructure</title>
+
+  <!-- ═══════════════════════════════════════════════════
+       PRIMARY SEO META TAGS
+  ═══════════════════════════════════════════════════ -->
+  <title>Arête Core | Modern Computing Infrastructure & AI Systems</title>
+  <meta name="description" content="Arête Core designs, delivers, installs, and supports modern computing systems — from data center architecture and high-performance computing to AI-enabled infrastructure platforms." />
+  <meta name="keywords" content="Arete Core, Arête Core, AreteCore, computing infrastructure, data center design, HPC, high performance computing, AI infrastructure, GPU clusters, server installation, network infrastructure, system integration" />
+  <meta name="author" content="Arête Core" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://aretecore.ai/" />
+
+  <!-- ═══════════════════════════════════════════════════
+       OPEN GRAPH — controls how link looks in LinkedIn,
+       Facebook, iMessage, Slack previews
+  ═══════════════════════════════════════════════════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aretecore.ai/" />
+  <meta property="og:title" content="Arête Core | Modern Computing Infrastructure & AI Systems" />
+  <meta property="og:description" content="Arête Core designs, delivers, installs, and supports advanced computing systems — from data center architecture to AI-enabled platforms." />
+  <meta property="og:image" content="https://aretecore.ai/logo.png" />
+  <meta property="og:image:width" content="2048" />
+  <meta property="og:image:height" content="1344" />
+  <meta property="og:site_name" content="Arête Core" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ═══════════════════════════════════════════════════
+       TWITTER CARD
+  ═══════════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Arête Core | Modern Computing Infrastructure & AI Systems" />
+  <meta name="twitter:description" content="Designing, delivering, installing, and supporting advanced computing systems — from data center architecture to AI-enabled platforms." />
+  <meta name="twitter:image" content="https://aretecore.ai/logo.png" />
+
+  <!-- ═══════════════════════════════════════════════════
+       STRUCTURED DATA — tells Google exactly what this
+       business is (shows in Knowledge Panel searches)
+  ═══════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Arête Core",
+    "alternateName": ["Arete Core", "AreteCore", "ARÊTE CORE"],
+    "url": "https://aretecore.ai",
+    "logo": "https://aretecore.ai/logo.png",
+    "description": "Arête Core designs, delivers, installs, and supports modern computing systems — from data center architecture and high-performance computing to AI-enabled infrastructure platforms.",
+    "foundingLocation": {
+      "@type": "Place",
+      "name": "United States"
+    },
+    "sameAs": [
+      "https://aretecore.ai"
+    ],
+    "serviceArea": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Computing Infrastructure Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "System Design" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hardware Procurement & Delivery" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Installation & Integration" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ongoing Support & Maintenance" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Data Center & HPC Environments" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI-Enabled Infrastructure Platforms" } }
+      ]
+    }
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════════════
+       WEBSITE STRUCTURED DATA
+  ═══════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Arête Core",
+    "alternateName": "Arete Core",
+    "url": "https://aretecore.ai"
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --black:     #080a0e;
@@ -64,7 +149,7 @@
     }
     nav .nav-links a:hover { color: var(--accent); }
 
-    /* ── LOGO HERO — full-width prominent brand display ── */
+    /* ── LOGO HERO ── */
     .logo-hero {
       padding: 120px 48px 72px;
       display: flex; flex-direction: column;
@@ -74,7 +159,6 @@
       border-bottom: 1px solid var(--border);
       text-align: center;
     }
-
     .logo-hero::before {
       content: '';
       position: absolute; inset: 0;
@@ -83,8 +167,6 @@
         linear-gradient(90deg, rgba(79,163,247,0.05) 1px, transparent 1px);
       background-size: 64px 64px;
     }
-
-    /* Blue radial glow centered behind logo */
     .logo-hero::after {
       content: '';
       position: absolute; top: 50%; left: 50%;
@@ -93,14 +175,11 @@
       background: radial-gradient(ellipse, rgba(26,95,180,0.28) 0%, transparent 68%);
       pointer-events: none;
     }
-
     .logo-hero-inner {
       position: relative; z-index: 2;
       display: flex; flex-direction: column;
       align-items: center; gap: 28px;
     }
-
-    /* THE big logo */
     .logo-hero-img {
       width: min(720px, 82vw);
       height: auto;
@@ -109,7 +188,6 @@
         drop-shadow(0 0 80px rgba(40,118,212,0.2))
         drop-shadow(0 4px 16px rgba(0,0,0,0.7));
     }
-
     .logo-hero-tagline {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 12px; font-weight: 600;
@@ -124,19 +202,16 @@
       overflow: hidden; min-height: 55vh;
       display: flex; align-items: center;
     }
-
     .hero-bg {
       position: absolute; inset: 0;
       background:
         radial-gradient(ellipse 70% 60% at 70% 50%, rgba(26,95,180,0.13) 0%, transparent 65%),
         linear-gradient(160deg, var(--black) 0%, #0a1520 60%, var(--black) 100%);
     }
-
     .hero-mountain {
       position: absolute; right: -2%; bottom: -2%;
       width: 52%; opacity: 0.08; pointer-events: none;
     }
-
     .hero-scan {
       position: absolute; left: 0; right: 0; height: 1px;
       background: linear-gradient(90deg, transparent, var(--blue-lite), var(--accent), transparent);
@@ -148,9 +223,7 @@
       90%  { opacity: 0.3; }
       100% { top: 95%; opacity: 0; }
     }
-
     .hero-text { position: relative; z-index: 2; max-width: 640px; }
-
     .hero-eyebrow {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 11px; font-weight: 700;
@@ -159,7 +232,6 @@
       display: flex; align-items: center; gap: 12px;
     }
     .hero-eyebrow::before { content: ''; display: block; width: 32px; height: 1px; background: var(--accent); }
-
     h1 {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: clamp(52px, 7vw, 96px); font-weight: 900;
@@ -167,12 +239,10 @@
       color: var(--white); text-transform: uppercase; margin-bottom: 28px;
     }
     h1 span { display: block; color: transparent; -webkit-text-stroke: 1px rgba(79,163,247,0.5); }
-
     .hero-sub {
       font-size: 18px; font-weight: 300; color: var(--text-dim);
       max-width: 500px; margin-bottom: 48px; line-height: 1.7;
     }
-
     .hero-cta {
       display: inline-flex; align-items: center; gap: 12px;
       font-family: 'Barlow Condensed', sans-serif;
@@ -184,7 +254,6 @@
       transition: background 0.2s, transform 0.2s;
     }
     .hero-cta:hover { background: var(--blue-lite); transform: translateY(-2px); }
-
     .stats-bar {
       position: relative; z-index: 2;
       display: flex; border-top: 1px solid var(--border);
@@ -256,14 +325,8 @@
     .cap-text { font-family: 'Barlow Condensed', sans-serif; font-size: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text); line-height: 1.4; }
 
     /* ── FOOTER ── */
-    footer { background: var(--dark); border-top: 1px solid var(--border); padding: 60px 48px 40px; }
-    .footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; flex-wrap: wrap; margin-bottom: 48px; }
-    footer img { height: 80px; width: auto; filter: drop-shadow(0 2px 16px rgba(40,118,212,0.3)); }
-    .footer-tagline { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); margin-top: 10px; }
-    .footer-contact-label { font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
-    .footer-contact a { display: block; font-size: 15px; font-weight: 300; color: var(--text-dim); text-decoration: none; transition: color 0.2s; }
-    .footer-contact a:hover { color: var(--white); }
-    .footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    footer { background: var(--dark); border-top: 1px solid var(--border); padding: 32px 48px; }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
     .footer-copy { font-size: 12px; color: var(--muted); letter-spacing: 0.05em; }
 
     /* ── ANIMATIONS ── */
@@ -282,16 +345,16 @@
       section { padding: 72px 24px; }
       #about { grid-template-columns: 1fr; padding: 72px 24px; gap: 48px; }
       .about-visual::before { display: none; }
-      footer { padding: 48px 24px 32px; }
-      .footer-inner { flex-direction: column; }
+      footer { padding: 32px 24px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
     }
   </style>
 </head>
 <body>
 
   <!-- NAV -->
-  <nav>
-    <img src="logo.png" alt="ARÊTE CORE" />
+  <nav aria-label="Main navigation">
+    <img src="logo.png" alt="Arête Core — Modern Computing Infrastructure" width="180" height="48" />
     <div class="nav-links">
       <a href="#services">Services</a>
       <a href="#about">About</a>
@@ -300,20 +363,20 @@
   </nav>
 
   <!-- LOGO HERO -->
-  <div class="logo-hero">
+  <header class="logo-hero" role="banner">
     <div class="logo-hero-inner">
-      <img class="logo-hero-img" src="logo.png" alt="ARÊTE CORE" />
-      <div class="logo-hero-tagline">
+      <img class="logo-hero-img" src="logo.png" alt="Arête Core logo — Modern Computing Infrastructure and AI Systems" width="720" height="473" />
+      <p class="logo-hero-tagline">
         Designing <span>·</span> Installing <span>·</span> Supporting
-      </div>
+      </p>
     </div>
-  </div>
+  </header>
 
   <!-- HERO CONTENT -->
   <div class="hero-content-section">
     <div class="hero-bg"></div>
-    <div class="hero-scan"></div>
-    <svg class="hero-mountain" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+    <div class="hero-scan" aria-hidden="true"></div>
+    <svg class="hero-mountain" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <polygon points="400,20 750,480 50,480" fill="white" opacity="0.5"/>
       <polygon points="580,80 800,480 360,480" fill="white" opacity="0.5"/>
       <polygon points="180,140 420,480 -40,480" fill="white" opacity="0.5"/>
@@ -321,15 +384,15 @@
     </svg>
     <div style="width:100%">
       <div class="hero-text">
-        <div class="hero-eyebrow">Modern Computing Infrastructure</div>
+        <p class="hero-eyebrow">Modern Computing Infrastructure</p>
         <h1>Infrastructure<br/><span>Built to</span>Propel</h1>
         <p class="hero-sub">Designing, delivering, installing, and supporting advanced computing systems — from data center architecture to AI-enabled platforms.</p>
         <a href="#services" class="hero-cta">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           Explore Our Work
         </a>
       </div>
-      <div class="stats-bar">
+      <div class="stats-bar" aria-label="Key capabilities">
         <div class="stat-item"><div class="stat-num">End<span>-to-</span>End</div><div class="stat-label">Systems Delivery</div></div>
         <div class="stat-item"><div class="stat-num"><span>AI</span>-Ready</div><div class="stat-label">Platform Design</div></div>
         <div class="stat-item"><div class="stat-num">24<span>/</span>7</div><div class="stat-label">Operational Support</div></div>
@@ -339,57 +402,57 @@
   </div>
 
   <!-- SERVICES -->
-  <section id="services">
+  <section id="services" aria-labelledby="services-heading">
     <div class="section-header fade-up">
       <div class="section-tag">What We Do</div>
-      <h2>Full-Lifecycle<br/>System Services</h2>
-      <p class="section-lead">We engage at every stage — from concept through long-term operations — so your infrastructure performs from day one and keeps pace with your organization's evolution.</p>
+      <h2 id="services-heading">Full-Lifecycle<br/>System Services</h2>
+      <p class="section-lead">Arête Core engages at every stage — from concept through long-term operations — so your infrastructure performs from day one and keeps pace with your organization's evolution.</p>
     </div>
     <div class="services-grid">
       <div class="service-card fade-up">
-        <div class="service-num">01</div>
-        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        <div class="service-title">System Design</div>
-        <div class="service-body">Architecture and engineering for modern compute, storage, and networking environments — scoped to your workloads and long-term objectives.</div>
+        <div class="service-num" aria-hidden="true">01</div>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        <h3 class="service-title">System Design</h3>
+        <p class="service-body">Architecture and engineering for modern compute, storage, and networking environments — scoped to your workloads and long-term objectives.</p>
       </div>
       <div class="service-card fade-up">
-        <div class="service-num">02</div>
-        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
-        <div class="service-title">Procurement & Delivery</div>
-        <div class="service-body">Hardware selection, vendor sourcing, and logistics management — ensuring the right components arrive on time, on spec, and on budget.</div>
+        <div class="service-num" aria-hidden="true">02</div>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        <h3 class="service-title">Procurement & Delivery</h3>
+        <p class="service-body">Hardware selection, vendor sourcing, and logistics management — ensuring the right components arrive on time, on spec, and on budget.</p>
       </div>
       <div class="service-card fade-up">
-        <div class="service-num">03</div>
-        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-        <div class="service-title">Installation & Integration</div>
-        <div class="service-body">Physical deployment, cabling, configuration, and software integration — executed with precision so systems go live without disruption.</div>
+        <div class="service-num" aria-hidden="true">03</div>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        <h3 class="service-title">Installation & Integration</h3>
+        <p class="service-body">Physical deployment, cabling, configuration, and software integration — executed with precision so systems go live without disruption.</p>
       </div>
       <div class="service-card fade-up">
-        <div class="service-num">04</div>
-        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        <div class="service-title">Ongoing Support</div>
-        <div class="service-body">Maintenance, monitoring, troubleshooting, and refresh planning — continuous operational coverage that keeps your systems running at peak.</div>
+        <div class="service-num" aria-hidden="true">04</div>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <h3 class="service-title">Ongoing Support</h3>
+        <p class="service-body">Maintenance, monitoring, troubleshooting, and refresh planning — continuous operational coverage that keeps your systems running at peak.</p>
       </div>
       <div class="service-card fade-up">
-        <div class="service-num">05</div>
-        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
-        <div class="service-title">Data Center & HPC</div>
-        <div class="service-body">Specialized expertise in high-density data center environments and high-performance computing clusters built for demanding workloads.</div>
+        <div class="service-num" aria-hidden="true">05</div>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+        <h3 class="service-title">Data Center & HPC</h3>
+        <p class="service-body">Specialized expertise in high-density data center environments and high-performance computing clusters built for demanding workloads.</p>
       </div>
       <div class="service-card fade-up">
-        <div class="service-num">06</div>
-        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        <div class="service-title">AI-Enabled Platforms</div>
-        <div class="service-body">Infrastructure purpose-built to support artificial intelligence and machine learning workloads — from GPU clusters to integrated AI pipelines.</div>
+        <div class="service-num" aria-hidden="true">06</div>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <h3 class="service-title">AI-Enabled Platforms</h3>
+        <p class="service-body">Infrastructure purpose-built to support artificial intelligence and machine learning workloads — from GPU clusters to integrated AI pipelines.</p>
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about">
+  <section id="about" aria-labelledby="about-heading">
     <div class="about-visual fade-up">
       <div class="about-visual-inner">
-        <svg class="about-mountain-art" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+        <svg class="about-mountain-art" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <defs>
             <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stop-color="#0a1a30"/><stop offset="100%" stop-color="#0d1117"/>
@@ -424,27 +487,27 @@
     </div>
     <div class="fade-up">
       <div class="section-tag">Our Name</div>
-      <h2>The Meaning<br/>Behind the Name</h2>
+      <h2 id="about-heading">The Meaning<br/>Behind the Name</h2>
       <div class="brand-blocks">
         <div class="brand-block">
           <div class="brand-block-accent"></div>
           <div>
-            <div class="brand-block-title">Arête — The Ridge</div>
-            <div class="brand-block-body">In mountaineering and climbing, an arête is a sharp ridge or corner where two rock faces meet. Climbers use arêtes as leverage points to gain height and move closer to their summit or objective.</div>
+            <h3 class="brand-block-title">Arête — The Ridge</h3>
+            <p class="brand-block-body">In mountaineering and climbing, an arête is a sharp ridge or corner where two rock faces meet. Climbers use arêtes as leverage points to gain height and move closer to their summit or objective.</p>
           </div>
         </div>
         <div class="brand-block">
           <div class="brand-block-accent"></div>
           <div>
-            <div class="brand-block-title">Core — The Center</div>
-            <div class="brand-block-body">Core represents what sits at the center of our work — people, principles, and technology. Like processor cores, we understand how individual components work together to perform meaningful work at scale.</div>
+            <h3 class="brand-block-title">Core — The Center</h3>
+            <p class="brand-block-body">Core represents what sits at the center of our work — people, principles, and technology. Like processor cores, we understand how individual components work together to perform meaningful work at scale.</p>
           </div>
         </div>
         <div class="brand-block">
           <div class="brand-block-accent"></div>
           <div>
-            <div class="brand-block-title">The Principle</div>
-            <div class="brand-block-body">ARÊTE CORE applies this same principle to technology — using systems and infrastructure as leverage to propel organizations higher.</div>
+            <h3 class="brand-block-title">The Principle</h3>
+            <p class="brand-block-body">Arête Core applies this same principle to technology — using systems and infrastructure as leverage to propel organizations higher.</p>
           </div>
         </div>
       </div>
@@ -452,32 +515,32 @@
   </section>
 
   <!-- CAPABILITIES -->
-  <section id="capabilities">
+  <section id="capabilities" aria-labelledby="capabilities-heading">
     <div class="section-header fade-up">
       <div class="section-tag">Technical Depth</div>
-      <h2>Core Capabilities</h2>
+      <h2 id="capabilities-heading">Core Capabilities</h2>
       <p class="section-lead">Our team brings hands-on expertise across the full technology stack — from physical infrastructure through software-defined environments and AI platforms.</p>
     </div>
     <div class="cap-list">
-      <div class="cap-item fade-up"><div class="cap-dot"></div><div class="cap-text">Data Center Design & Build-Out</div></div>
-      <div class="cap-item fade-up"><div class="cap-dot"></div><div class="cap-text">High-Performance Computing Clusters</div></div>
-      <div class="cap-item fade-up"><div class="cap-dot"></div><div class="cap-text">AI & GPU Infrastructure</div></div>
-      <div class="cap-item fade-up"><div class="cap-dot"></div><div class="cap-text">Server & Storage Systems</div></div>
-      <div class="cap-item fade-up"><div class="cap-dot"></div><div class="cap-text">Enterprise Networking</div></div>
-      <div class="cap-item fade-up"><div class="cap-dot"></div><div class="cap-text">Cabling & Physical Layer</div></div>
-      <div class="cap-item fade-up"><div class="cap-dot"></div><div class="cap-text">System Integration & Testing</div></div>
-      <div class="cap-item fade-up"><div class="cap-dot"></div><div class="cap-text">Infrastructure Refresh & Lifecycle Planning</div></div>
-      <div class="cap-item fade-up"><div class="cap-dot"></div><div class="cap-text">Maintenance & Break/Fix Support</div></div>
-      <div class="cap-item fade-up"><div class="cap-dot"></div><div class="cap-text">Vendor & OEM Coordination</div></div>
-      <div class="cap-item fade-up"><div class="cap-dot"></div><div class="cap-text">Hybrid Cloud Integration</div></div>
-      <div class="cap-item fade-up"><div class="cap-dot"></div><div class="cap-text">Operational Monitoring & Alerting</div></div>
+      <div class="cap-item fade-up"><div class="cap-dot" aria-hidden="true"></div><div class="cap-text">Data Center Design & Build-Out</div></div>
+      <div class="cap-item fade-up"><div class="cap-dot" aria-hidden="true"></div><div class="cap-text">High-Performance Computing Clusters</div></div>
+      <div class="cap-item fade-up"><div class="cap-dot" aria-hidden="true"></div><div class="cap-text">AI & GPU Infrastructure</div></div>
+      <div class="cap-item fade-up"><div class="cap-dot" aria-hidden="true"></div><div class="cap-text">Server & Storage Systems</div></div>
+      <div class="cap-item fade-up"><div class="cap-dot" aria-hidden="true"></div><div class="cap-text">Enterprise Networking</div></div>
+      <div class="cap-item fade-up"><div class="cap-dot" aria-hidden="true"></div><div class="cap-text">Cabling & Physical Layer</div></div>
+      <div class="cap-item fade-up"><div class="cap-dot" aria-hidden="true"></div><div class="cap-text">System Integration & Testing</div></div>
+      <div class="cap-item fade-up"><div class="cap-dot" aria-hidden="true"></div><div class="cap-text">Infrastructure Refresh & Lifecycle Planning</div></div>
+      <div class="cap-item fade-up"><div class="cap-dot" aria-hidden="true"></div><div class="cap-text">Maintenance & Break/Fix Support</div></div>
+      <div class="cap-item fade-up"><div class="cap-dot" aria-hidden="true"></div><div class="cap-text">Vendor & OEM Coordination</div></div>
+      <div class="cap-item fade-up"><div class="cap-dot" aria-hidden="true"></div><div class="cap-text">Hybrid Cloud Integration</div></div>
+      <div class="cap-item fade-up"><div class="cap-dot" aria-hidden="true"></div><div class="cap-text">Operational Monitoring & Alerting</div></div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
     <div class="footer-bottom">
-      <div class="footer-copy">© 2026 ARÊTE CORE. All rights reserved.</div>
+      <div class="footer-copy">© 2026 Arête Core. All rights reserved.</div>
       <div class="footer-copy">Modern computing systems — built to propel organizations forward.</div>
     </div>
   </footer>
