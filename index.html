@@ -48,6 +48,14 @@
     "alternateName": ["Arete Core", "AreteCore", "ARÊTE CORE"],
     "url": "https://aretecore.ai",
     "logo": "https://aretecore.ai/logo.png",
+    "email": "info@aretecore.ai",
+    "telephone": "+1-866-952-7383",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-866-952-7383",
+      "email": "info@aretecore.ai",
+      "contactType": "customer service"
+    },
     "description": "Arête Core designs, delivers, installs, and supports modern computing systems — from data center architecture and high-performance computing to AI-enabled infrastructure platforms.",
     "foundingLocation": {
       "@type": "Place",
@@ -325,7 +333,13 @@
     .cap-text { font-family: 'Barlow Condensed', sans-serif; font-size: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text); line-height: 1.4; }
 
     /* ── FOOTER ── */
-    footer { background: var(--dark); border-top: 1px solid var(--border); padding: 32px 48px; }
+    footer { background: var(--dark); border-top: 1px solid var(--border); padding: 48px 48px 32px; }
+    .footer-contact { display: flex; gap: 48px; margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+    .footer-contact-item { display: flex; align-items: center; gap: 14px; }
+    .footer-contact-icon { flex-shrink: 0; width: 36px; height: 36px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--accent); }
+    .footer-contact-label { font-family: 'Barlow Condensed', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
+    .footer-contact-value { font-size: 15px; font-weight: 400; color: var(--text); text-decoration: none; transition: color 0.2s; }
+    .footer-contact-value:hover { color: var(--accent); }
     .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
     .footer-copy { font-size: 12px; color: var(--muted); letter-spacing: 0.05em; }
 
@@ -345,7 +359,8 @@
       section { padding: 72px 24px; }
       #about { grid-template-columns: 1fr; padding: 72px 24px; gap: 48px; }
       .about-visual::before { display: none; }
-      footer { padding: 32px 24px; }
+      footer { padding: 40px 24px 28px; }
+      .footer-contact { gap: 28px; margin-bottom: 32px; padding-bottom: 32px; }
       .footer-bottom { flex-direction: column; text-align: center; }
     }
   </style>
@@ -359,6 +374,7 @@
       <a href="#services">Services</a>
       <a href="#about">About</a>
       <a href="#capabilities">Capabilities</a>
+      <a href="#contact">Contact</a>
     </div>
   </nav>
 
@@ -538,7 +554,27 @@
   </section>
 
   <!-- FOOTER -->
-  <footer>
+  <footer id="contact">
+    <div class="footer-contact">
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <div class="footer-contact-label">Email</div>
+          <a href="mailto:info@aretecore.ai" class="footer-contact-value">info@aretecore.ai</a>
+        </div>
+      </div>
+      <div class="footer-contact-item">
+        <div class="footer-contact-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="footer-contact-label">Phone</div>
+          <a href="tel:+18669527383" class="footer-contact-value">866-952-7383</a>
+        </div>
+      </div>
+    </div>
     <div class="footer-bottom">
       <div class="footer-copy">© 2026 Arête Core. All rights reserved.</div>
       <div class="footer-copy">Modern computing systems — built to propel organizations forward.</div>
